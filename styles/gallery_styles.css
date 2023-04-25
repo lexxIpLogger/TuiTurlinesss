@@ -1,0 +1,329 @@
+/* Галерея */
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 0;
+    background: linear-gradient(45deg, #f0f0f0,#272727); 
+    letter-spacing: 1.2;
+    height: 100vh;
+}
+
+p{
+    margin: 0 0;
+}
+
+
+
+.head-gallery{
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+
+.head-gallery__name{
+    margin-left: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 42px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.head-gallery__name p{
+    margin: 0 0;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.head-gallery__back-to-index {
+    margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.head-gallery__back-to-index:hover {
+    cursor: pointer;
+}
+
+.head-gallery__back-to-index p{
+    margin: 0 0;
+
+}
+
+.head-gallery__item-1{
+    font-size: 46px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.head-gallery__item-2{
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.gallery-body{
+    margin-top: 20px; 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-body__item{
+    width: 31%;
+    margin: 10px auto;
+    height: 250px;
+    border: 1px solid #FFFFFF;
+    border-radius: 25px;
+}
+
+
+#gallery-body__item-1{
+    background: url(../img/gallery/brodway.webp);
+    background-size: cover;
+}
+
+#gallery-body__item-1:hover{
+    transform: translate(-15px, -15px);
+    transition: transform .2s linear;
+}
+
+#gallery-body__item-2{
+    background: url(../img/gallery/bukingemskiy-dvorets.webp);
+    background-size: cover;
+}
+
+#gallery-body__item-2:hover{
+    transform: translate(-15px, -15px);
+    transition: transform .2s linear;
+}
+
+#gallery-body__item-3{
+    background: url(../img/gallery/eyfeleva-bashnya.webp);
+    background-size: cover;
+}
+
+#gallery-body__item-3:hover{
+    transform: translate(-15px, -15px);
+    transition: transform .2s linear;
+}
+
+#gallery-body__item-4{
+    background: url(../img/gallery/pizanskaya-bashnya.webp);
+    background-size: cover;
+}
+
+#gallery-body__item-4:hover{
+    transform: translate(-15px, -15px);
+    transition: transform .2s linear;
+}
+
+#gallery-body__item-5{
+    background: url(../img/gallery/goriz-krasiv.webp);
+    background-size: cover;
+}
+
+#gallery-body__item-5:hover{
+    transform: translate(-15px, -15px);
+    transition: transform .2s linear;
+}
+
+#gallery-body__item-6{
+    background: url(../img/gallery/krasnaya-ploshchad-sverkhu.webp);
+    background-size: cover;
+}
+
+#gallery-body__item-6:hover{
+    transform: translate(-15px, -15px);
+    transition: transform .2s linear;
+}
+
+#gallery-body__item-7{
+    background: url(../img/gallery/luvr.webp);
+    background-size: cover;
+}
+
+#gallery-body__item-7:hover{
+    transform: translate(-15px, -15px);
+    transition: transform .2s linear;
+}
+
+#gallery-body__item-8{
+    background: url(../img/gallery/notr-dam-de-pari.webp);
+    background-size: cover;
+}
+
+#gallery-body__item-8:hover{
+    transform: translate(-15px, -15px);
+    transition: transform .2s linear;
+}
+
+#gallery-body__item-9{
+    background: url(../img/gallery/pisayushchiy-malchik.webp);
+    background-size: cover;
+}
+
+#gallery-body__item-9:hover{
+    transform: translate(-15px, -15px);
+    transition: transform .2s linear;
+}
+
+#gallery-body__item-10{
+    background: url(../img/gallery/reykhstag.webp);
+    background-size: cover;
+}
+
+#gallery-body__item-10:hover{
+    transform: translate(-15px, -15px);
+    transition: transform .2s linear;
+}
+
+#gallery-body__item-11{
+    background: url(../img/gallery/statuya-svobody.webp);
+    background-size: cover;
+}
+
+#gallery-body__item-11:hover{
+    transform: translate(-15px, -15px);
+    transition: transform .2s linear;
+}
+
+#gallery-body__item-12{
+    background: url(../img/gallery/vodopad-viktoriya.webp);
+    background-size: cover;
+}
+
+#gallery-body__item-12:hover{
+    transform: translate(-15px, -15px);
+    transition: transform .2s linear;
+}
+
+.gallery-slider{
+    width: 100%;
+    display: none;
+    height: 800px;
+}
+
+.gallery-slider__container{
+    width: 1024px;
+    height: 100vh;
+    border: 10px solid #ffffff;
+    margin: auto auto;
+    
+    
+}
+.next-pict, .prev-pict{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 46px;
+    color: #F0F0F0;
+    font-weight: bold;
+    font-size: 64px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next-pict{
+    right: 0;
+}
+
+.prev-pict{
+    left: 0;
+}
+
+#exit-gallery{
+    background: url('../img/controls/exit-gallery.png');
+    width: 64px;
+    height: 64px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+ .head-gallery__back-to-index a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1000px){
+    
+    body{
+        height: 5000px;
+    }
+    
+    .gallery-body{
+        margin-top: 20px; 
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gallery-body__item{
+        width: 100%;
+        margin: 10px auto;
+        height: 700px;
+        
+    } 
+    
+    
+    .gallery-slider{
+        width: 100%;
+    }
+
+    .gallery-slider__container{
+        width: 100%;
+        height: 730px;
+        position: fixed;
+        margin: 45% 0;    
+    }
+    
+    .head-gallery__back-to-index p{
+        font-size: 62px;
+    }
+    
+    .head-gallery__name p{
+        font-size: 62px;
+    }
+    
+    .next-pict, .prev-pict{
+        
+    }
+
+    .next-pict{
+        float: left;
+        
+    }
+
+    .prev-pict{
+        float: right;
+    }
+    
+    .next-pict, .prev-pict{
+        top: 50%;
+        padding: 36px;
+    }
+
+    #exit-gallery{
+        background: url('../img/controls/exit-gallery.png');
+        width: 32px;
+        height: 32px;
+        float: left;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    
+    .head-gallery__back-to-index a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+}
