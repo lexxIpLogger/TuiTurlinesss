@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title> Регистрация </title>
+        <link href="../styles/registration_styles.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class='main-container'>
+            <!-- all_reg_container -->
+            <div class='header-reg'>
+                <!-- header_reg -->
+                <div class='header-reg__back-to-main'>
+                    <!-- back_to_main -->
+                    <a href="../index.html"><p>TUI TurLines</p></a>
+                </div>
+
+                <div class='header-reg__welcome-reg'>
+                    <p>Регистрация</p>
+                    <!-- welcome_reg -->
+                </div>
+            </div>
+
+            <div class='reg-container' id='reg-container'>
+                <!-- reg_container -->
+                <div class='reg-container__text'>
+                    <!-- reg_text -->
+                    <div class='reg-container__text__first'>
+                        <!-- reg_text_first -->
+                        <p> Добро Пожаловать! </p>
+                    </div>
+
+                    <div class='reg-container__text__last'>
+                        <!-- reg_text_last -->
+                        <p> Пройдите регистрацию сейчас <br/> и получите скидку на путешествия!</p>
+                    </div>
+                </div>
+
+                <div class='reg-form' id='reg-form'>
+                    <!-- reg_window -->
+                    
+                    <input type='text' placeholder='Имя пользователя' class='reg-form__username' id='reg-form__username'>
+                    <!-- username -->
+
+                    <input type='password' placeholder='Пароль' class='reg-form__password' id='reg-form__password'>
+                    <!-- password -->
+
+                    <input type='text' placeholder='Email или Телефон' class='reg-form__contact' id='reg-form__contact'>
+                    <!-- contact -->
+                    
+                    <div class='reg-form__button' id='reg-form__button'>
+                        <!-- reg_button -->
+                        <p>Подтвердить</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class='output-log-window' id='output-log-window'>
+                <!-- output_log_window -->
+            </div>
+        </div>
+        <script src='../scripts/reg_output.js'></script>
+    </body>
+</html>
