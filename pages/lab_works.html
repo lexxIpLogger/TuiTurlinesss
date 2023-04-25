@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title> Лабораторные работы </title>
+        <!-- <link href="../styles/style.css" type="text/css" rel="stylesheet"> -->
+        <link href="../styles/lab_works_styles.css" type="text/css" rel="stylesheet">
+        <meta charset="utf-8">
+         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class='main-container'>
+            <!-- all_lab_works_container -->
+            <div class='header-labs'>
+                <!-- header_labs -->
+                <div class='header-labs__back-to-main'>
+                    <!-- back_to_main -->
+                    <a href="../index.html"><p>TUI TurLines</p></a>
+                </div>
+
+                <div class='header-labs__welcome-lab'>
+                    <!-- welcome_lab -->
+                    <p>Лабораторные работы</p>
+                </div>
+            </div>
+            
+            <div class='lab-work'>
+                <div class='lab-work__text-1'>
+                    В лабораторной работе №1 задании 1 <br> 
+                    нужно было расчитать площадь и периметр прямоугольника для вводя координаты для двух точек что и задают прямоугольник.
+                </div>
+                
+                <div class='lab-work__code-1'>
+                    <p class='lab-work__inner'>Код для задания 1</p>
+                    <textarea id='code_1_1'>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        alert('Программа для расчета периметра и площади прямоугольника')
+                        var S;
+                        var P;
+                        var prom_dlina;
+                        var prom_shirina;
+                        var shirina;
+                        var dlina;
+                        var x1 = prompt('x1 для первой точки');
+                        x1 = parseInt(x1);
+                        var y1 = prompt('y1 для первой точки');
+                        y1 = parseInt(y1);
+                        var x2 = prompt('x2 для первой точки');
+                        x2 = parseInt(x2);
+                        var y2 = prompt('y2 для первой точки');
+                        y2 = parseInt(y2);
+                        shirina = Math.abs(x1 - x2);
+                        prom_shirina = shirina;
+                        dlina = Math.abs(y1 - y2);
+                        prom_dlina = dlina;
+                        S =  prom_shirina * prom_dlina;
+                        alert('Площадь: ' + S);
+                        P = 2 * (prom_shirina + prom_dlina);
+                        alert('Периметр: ' + P);
+                    </textarea>
+                    
+                     <div class='lab-work__start' id='button1_1'>
+                         <p>Выполнить</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class='lab-work'>
+                <div class='lab-work__text-1'>
+                    В лабораторной работе №1 задании 2 <br>
+                    нужно было расчитать время прошедшее с начала суток по введеным секундам
+                </div>
+                
+                <div class='lab-work__code-1'>
+                    <p class='lab-work__inner'>Код для задания 2</p>
+                    <textarea id='code1_2'>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        alert('Данная программа посчитает количество полных минут от начала суток')
+                        var minutes;
+                        var seconds;
+                        var ost_seconds;
+                        seconds = prompt('Введи количество секунд прошедих от начала суток: ');
+                        seconds = parseInt(seconds);
+                        minutes = seconds / 60;
+                        minutes = parseInt(minutes)
+                        ost_seconds = seconds % 60;
+                        alert( 'С начала суток прошло:'+minutes+'минут'+ost_seconds+'секунд')
+                    </textarea>
+                    
+                     <div class='lab-work__start' id='button1_2'>
+                         <p>Выполнить</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class='lab-work'>
+                <div class='lab-work__text-2'>
+                    В лабораторной работе №2 задании 1 <br>
+                    нужно было написать программу которая из трех введеных чисел найдет взаимно обратные и если такие есть выведит True или же если таких нет выведит False
+                </div>
+                
+                <div class='lab-work__code-2'> 
+                    <p class='lab-work__inner'>Код для задания 1</p>
+                    <textarea>
+                        alert('Данная программа проверяет есть ли в введенных числах взаимно обратные')
+                
+                        alert('Введите три числа НЕ РАВНЫХ НУЛЮ')
+                        var chislo_one = prompt('Введи первое число');
+                        var chislo_two = prompt('Введи второе число');
+                        var chislo_three = prompt('Введи третье число');
+
+                        chislo_one = parseInt(chislo_one);
+                        chislo_two = parseInt(chislo_two);
+                        chislo_three = parseInt(chislo_three);
+
+
+                        var one_two = ( chislo_one +  chislo_two );
+                        var two_three = ( chislo_two + chislo_three );
+                        var one_three = ( chislo_one +  chislo_three );
+
+                        alert('Сумма Первого и Второго = ' + one_two + ' | Сумма Второго и Третьего = ' + two_three + ' | Сумма Первого и Третьего = ' + one_three)
+
+                        if (one_two == 0){
+                            alert('True');
+                            }
+                        else
+                        
+                            if(two_three == 0){
+                                alert('True');
+                            }
+                            else{
+                                if(one_three == 0){
+                                    alert('True')
+                                }
+                                else{
+                                    alert('False')
+                                }
+                            }
+                        }
+                    </textarea>
+                    
+                     <div class='lab-work__start'  id='button2_1'>
+                         <p>Выполнить</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class='lab-work'>
+                <div class='lab-work__text-2'>
+                    В лабораторной работе №2 задании 2 <br>
+                    нужно было написать программу которая из 4 введеных чисел найдет отличное от остальных и выводит его позицию
+                </div>
+                
+                <div class='lab-work__code-2'>
+                    <p class='lab-work__inner'>Код для задания 2</p>
+                    <textarea>
+                        alert('Данная программа находит из 4 целых чисел отличное и выводит его позицию');
+                        alert('Введите одно число отличное от трех остальных равных между собой');
+
+                        var num_one = prompt('Первое число: ');
+                        var num_two = prompt('Второе число: ');
+                        var num_three = prompt('Третье число: ');
+                        var num_four = prompt('Четвертое число: ');
+
+                        num_one = parseInt(num_one);
+                        num_two = parseInt(num_two);
+                        num_three = parseInt(num_three);
+                        num_four = parseInt(num_four);
+
+
+                        if(num_one != num_two)
+                        {
+                            if(num_one != num_three)
+                            {
+                                if(num_one != num_four)
+                                {
+                                    alert(' Первое число отлично от других, позиция 1 ')
+                                }
+                            }
+                        }
+
+                        if(num_two != num_one)
+                        {
+                            if(num_two != num_three)
+                            {
+                                if(num_two != num_four)
+                                {
+                                    alert(' Второе число отлично от других, позиция 2 ')
+                                }
+                            }
+                        }
+
+
+                        if(num_three != num_one)
+                        {
+                            if(num_three != num_two)
+                            {
+                                if(num_three != num_four)
+                                {
+                                    alert(' Третье число отлично от других, позиция 3 ')
+                                }
+                            }
+                        }
+
+                        if(num_four != num_one)
+                        {
+                            if(num_four != num_two)
+                            {
+                                if(num_four != num_three)
+                                {
+                                    alert(' Четвертое число отлично от других, позиция 4 ')
+                                }
+                            }
+                        }
+                    </textarea>
+                    
+                     <div class='lab-work__start' id='button2_2'>
+                         <p>Выполнить</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class='lab-work'>
+                <div class='lab-work__text-2'>
+                    В лабораторной работе №2 задании 3 <br>
+                    нужно было написать программу которая решала систему уравнений через оператор if
+                </div>
+                
+                <div class='lab-work__code-2'>
+                    <p class='lab-work__inner'>Код для задания 3</p>
+                    <textarea>
+                        
+                        
+                        
+                        
+                        
+                        var x = prompt('Введи x ');
+                        var y;
+                        var a = 3.9;
+                        var b = 2.4;
+
+                        x = parseFloat(x);
+                        a = parseFloat(a);
+                        b = parseFloat(b);
+
+                        if(x <= 3)
+                        {
+                            y = (a + x) / (1 + Math.sqrt(Math.abs(x)));
+                        }
+
+                        if(3 < x)
+                        {
+                            if(x <= 5)
+                            {
+                                y = Math.log( (a * x) + (b * x * x) );
+                            }
+                        }
+
+                        if(x > 5)
+                        {
+                            y = Math.exp(b + x);
+                        }
+
+                        alert( 'y(x) = ' + y );
+                    </textarea>
+                    
+                     <div class='lab-work__start' id='button2_3'>
+                         <p>Выполнить</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class='lab-work'>
+                <div class='lab-work__text-2'>
+                    В лабораторной работе №2 задании 4 <br>
+                    нужно было написать программу которая решала систему уравнений через оператор switch case
+                </div>
+                
+                <div class='lab-work__code-2'>
+                    <p class='lab-work__inner'>Код для задания 4</p>
+                    <textarea>
+                        
+                        
+                        
+                        
+                        
+                        var x = prompt('Введи x');
+                        var y;
+                        var a = 3.9;
+                        var b = 2.4;
+                        x = parseInt(x);
+                        a = parseFloat(a);
+                        b = parseFloat(b);
+                        switch(x)
+                        {
+
+                        case 3:
+                            y = (a + x) / (1 + Math.sqrt(Math.abs(x)));
+                            break;
+
+                        case 5:
+                            y = Math.log( (a * x) + (b * x * x) );
+                            break;
+
+                        case 12:
+                            y = Math.exp(b + x);
+                            break;
+
+                        default:
+                            alert('Число: ' + x + ' введите пожалуйста 3 или 5 или 12');
+                            y = 'Отсутствует';
+                            break;
+                        }
+
+                        alert( 'Значение функции y(x)= ' + y );
+                    </textarea>
+                    
+                     <div class='lab-work__start' id='button2_4'>
+                         <p>Выполнить</p>
+                    </div>
+                </div>
+            </div>
+                
+            <div class='lab-work'>
+                <div class='lab-work__text-10'>
+                    В лабораторной работе №10 задании 1 <br>
+                    нужно было написать программу что выведит элементы из набора что меньше своего правого соседа и количество таковых
+                </div>
+                
+                <div class='lab-work__code-10'>
+                    <p class='lab-work__inner'>Код для задания 1</p>
+                    
+                    <textarea>    
+                        
+                        var quantityNum, all_num, countNum; 
+
+                        quantityNum = 2+Math.floor(20 * Math.random())
+                        all_num = [] 
+                        found_num = [] 
+                        countNum = 0
+
+                        for (let i = 0; i < quantityNum; i++){
+                            all_num.push(1+Math.floor(10 * Math.random()))
+                        } 
+
+                        for (let j = 0; j < quantityNum; j++){
+                            if(all_num[j] < all_num[j+1]){
+                                found_num.unshift(all_num[j])
+                                countNum++;
+                            } 
+                        } 
+
+                        alert("Оригинальный массив " + all_num)
+                        alert("Массив с нужными элементами " + found_num) 
+                        alert("Количество найденных " + countNum) 
+
+                    </textarea>
+                    
+                     <div class='lab-work__start' id='button10_1'>
+                         <p>Выполнить</p>
+                    </div>
+                </div>
+            </div>
+                
+                <div class='lab-work'>
+                <div class='lab-work__text-10'>
+                    В лабораторной работе №10 задании 2<br>
+                    нужно было написать программу что расчитает факториал введенного числа
+                </div>
+                
+                <div class='lab-work__code-10'>
+                    <p class='lab-work__inner'>Код для задания 2</p>
+                    
+                    <textarea>    
+                        
+                        var number, fact; 
+                        number = prompt("Введите число, факториал которого интересует")
+                        fact = 1; // начальное значение факториала
+                        for(let i = 1; i <= number; i++){ 
+                            fact = fact * i
+                        } 
+
+                        alert(fact) 
+                                                          
+                    </textarea>
+                    
+                     <div class='lab-work__start' id='button10_2'>
+                         <p>Выполнить</p>
+                    </div>
+                </div>
+            </div>
+                    
+            
+            <div class='lab-work'>
+                <div class='lab-work__text-10'>
+                    В лабораторной работе №10 задании 3 <br>
+                    нужно было написать программу что найдет минимальный из элементов с четными индексами
+                </div>
+                
+                <div class='lab-work__code-10'>
+                    <p class='lab-work__inner'>Код для задания 3</p>
+                    
+                    <textarea>    
+                        
+                    var arrNum, lengthArr, minNumArr;
+                    arrNum = []
+                    lengthArr = prompt("Введите длину массива")
+                        for(let i = 0; i < lengthArr; i++){
+                            arrNum.push(1+Math.floor(10 * Math.random()))
+                        } 
+
+                    minNumArr = arrNum[0] 
+
+                    for(let j = 0; j < lengthArr; j++){
+                        if (j % 2 == 0){
+                            if(arrNum[j] < minNumArr){
+                                minNumArr = arrNum[j]
+                            } 
+                        } 
+                    } 
+                    alert(arrNum)
+                    alert(minNumArr)
+                                                          
+                    </textarea>
+                    
+                     <div class='lab-work__start' id='button10_3'>
+                         <p>Выполнить</p>
+                    </div>
+                </div>
+            </div>
+                
+                
+            <div class='lab-work'>
+                <div class='lab-work__text-10'>
+                    В лабораторной работе №10 задании 4<br>
+                    нужно было написать программу что возведет в квадрат все локальные минимумы
+                </div>
+                
+                <div class='lab-work__code-10'>
+                    <p class='lab-work__inner'>Код для задания 4</p>
+                    
+                    <textarea>    
+                        
+                        var quantityNum, all_num, countNum; 
+                        quantityNum = 2+Math.floor(10 * Math.random())
+                        all_num = [] 
+                        countNum = 0 
+                        for (let i = 0; i < quantityNum; i++){
+                            all_num.push(1+Math.floor(10 * Math.random())) 
+                        } 
+
+                        alert(all_num + 'original')
+
+                        for (let j = 0; j < quantityNum;){
+                            if(all_num[j] < all_num[j+1] && all_num[j] < all_num[j-1]){
+                                all_num[j] = all_num[j] * all_num[j]
+                                j += 2
+                            }
+                            else{
+                                j += 1
+                            }
+                        } 
+
+                        alert(all_num + 'modification')
+                                                          
+                    </textarea>
+                    
+                     <div class='lab-work__start' id='button10_4'>
+                         <p>Выполнить</p>
+                    </div>
+                </div>
+            </div>
+                 
+        </div>
+        <script src='../scripts/lab_works.js'></script>
+    </body>
+</html>
