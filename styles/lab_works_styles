@@ -1,0 +1,301 @@
+/* Лаб Работы */
+* {
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0 0;
+}
+
+
+body{
+    margin: 0 0;
+    letter-spacing: 1.2;
+}
+
+.main-container{
+     background: linear-gradient(45deg, #f0f0f0,#272727); 
+}
+
+.header-labs{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.header-labs__welcome-lab{
+    margin-left: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 42px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.header-labs__back-to-main{
+    margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header-labs__back-to-main a{
+    font-size: 42px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+.lab-work{
+    width: 100%;
+    display: flex;
+}
+
+.lab-work__text-1{
+    width: 50%;
+    background: rgba(0,0,0,0.7);
+    color: #ffffff;
+    font-size: 22px;
+    padding-left: 5px;
+    margin: auto 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lab-work__code-1{
+    margin-top: 15%;
+    margin-left: 50px;
+    padding-left: 15px;
+    padding-top: 5px;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 18px;
+    background: rgba(0,0,0,0.7);
+    font-family: 'Roboto', sans-serif;
+}
+
+.lab-work__start{
+    width: 150px;
+    height: 50px;
+    background: #9DAA5A;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    
+}
+
+.lab-work__start p{
+    padding-top: 15px; 
+    text-align: center;
+}
+
+
+.lab-work__text-2{
+    width: 50%;
+    background: rgba(0,0,0,0.7);
+    color: #ffffff;
+    font-size: 22px;
+    padding-left: 5px;
+    margin: auto 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lab-work__code-2{
+    margin-top: 15%;
+    margin-left: 50px;
+    padding-top: 5px;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 18px;
+    background: rgba(0,0,0,0.7);
+    font-family: 'Roboto', sans-serif;
+}
+
+.lab-work__text-10{
+    width: 50%;
+    background: rgba(0,0,0,0.7);
+    color: #ffffff;
+    font-size: 22px;
+    padding-left: 5px;
+    margin: auto 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lab-work__code-10{
+    margin-top: 15%;
+    margin-left: 50px;
+    padding-top: 5px;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 18px;
+    background: rgba(0,0,0,0.7);
+    font-family: 'Roboto', sans-serif;
+}
+
+.lab-work__inner{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.lab-work__start{
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(45deg, #f0f0f0,#272727);
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+.lab-work__start p{
+    padding-top: 15px; 
+    text-align: center;
+}
+
+textarea{
+    width: 90%;
+    height: 600px;
+    background: rgba(0,0,0,0);
+    color: #FFFFFF;
+    margin-left: 5%;
+}
+
+@media screen and (max-width: 1000px){
+    /* Лаб Работы */
+
+  
+    .header-labs{
+        width: 100%;
+        height: 250px;
+        display: flex;
+    }
+
+    .header-labs__welcome-lab{
+        margin-left: 100px;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 44px;
+        color: #FFFFFF;
+    }
+
+
+    .lab-work{
+        width: 100%;
+        display: block;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .lab-work__text-1{
+        width: 100%;
+        background: rgba(0,0,0,0.7);
+        color: #ffffff;
+        font-size: 42px;
+        padding-left: 5px;
+        margin: auto 0;
+    }
+
+    .lab-work__code-1{
+        margin-top: 5%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-top: 5px;
+        width: 100%;
+        color: #FFFFFF;
+        font-size: 18px;
+        background: rgba(0,0,0,0.7);
+    }
+
+    .lab-work__start{
+        width: 150px;
+        height: 50px;
+        background: #9DAA5A;
+        margin: 0 auto;
+        margin-bottom: 25px;
+
+    }
+
+    .lab-work__start p{
+        padding-top: 15px; 
+        text-align: center;
+    }
+
+
+
+    .lab-work__text-2{
+        width: 100%;
+        background: rgba(0,0,0,0.7);
+        color: #ffffff;
+        font-size: 42px;
+        padding-left: 5px;
+        margin: auto;
+    }
+
+    .lab-work__code-2{
+        margin-top: 5%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 5px;
+        width: 100%;
+        color: #FFFFFF;
+        font-size: 18px;
+        background: rgba(0,0,0,0.7);
+    }
+    
+    .lab-work__text-10{
+        width: 100%;
+        background: rgba(0,0,0,0.7);
+        color: #ffffff;
+        font-size: 42px;
+        padding-left: 5px;
+        margin: auto;
+    }
+
+    .lab-work__code-10{
+        margin-top: 5%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 5px;
+        width: 100%;
+        color: #FFFFFF;
+        font-size: 18px;
+        background: rgba(0,0,0,0.7);
+    }
+
+
+    .lab-work__inner{
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 42px;
+    }
+
+    .lab-work__start{
+        width: 350px;
+        height: 175px;
+        background: linear-gradient(45deg, #f0f0f0,#272727);
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+    }
+
+    .lab-work__start p{
+        padding-top: 60px; 
+        text-align: center;
+        font-size: 52px;
+    }
+
+    textarea{
+        width: 100%;
+        height: 1200px;
+        background: rgba(0,0,0,0);
+        color: #FFFFFF;
+        margin: 0 auto;
+        font-size: 16px;
+        text-align: left;
+    }
+}
