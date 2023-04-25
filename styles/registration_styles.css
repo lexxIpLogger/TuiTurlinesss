@@ -1,0 +1,217 @@
+/* Регистрация */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 0;
+    letter-spacing: 1.2;
+}
+
+p{
+    margin: 0 0;
+}
+
+
+.main-container{
+    background: url('../img/backgrounds/main_background.webp');
+    background-size: cover;
+}
+
+.header-reg{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.header-reg__back-to-main{
+    margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header-reg__back-to-main a{
+    font-size: 42px;
+    text-decoration: none;
+    color: #1E1E1E;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-reg__welcome-reg{
+    margin-left: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #1E1E1E;
+    font-size: 42px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.reg-container__text{
+    width: 50%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.reg-container__text__first, .reg-container__text__last{
+    color: #FFFFFF;
+    font-size: 42px;
+    background: rgba(0,0,0,0.7);
+    padding-left: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.reg-container{
+    display: flex;
+}
+
+.reg-container input{
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #f0f0f0,#272727);
+    width: 80%;
+    height: 50px;
+    font-size: 24px;
+}
+
+.reg-form{
+    margin-top: 15%;
+    margin-bottom: 15%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 100px; 
+    background: rgba(0,0,0,0.7);
+    border: 10px solid #FFFFFF;
+}
+
+.reg-form__username, .reg-form__password, .reg-form__contact{
+    margin: 15px 0;
+}
+
+.reg-form__button{
+    width: 170px;
+    height: 30px;
+    background: linear-gradient(45deg, #f0f0f0,#272727);
+}
+
+.reg-form__button p{
+    text-align: center;
+    padding-top: 5px;
+    color: #FFFFFF;
+}
+
+.reg-form__button:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+    transition: transform .2s linear;
+}
+
+.output-log-window{
+    width: 100%;
+    height: 20%;
+    border-top: 2px solid #FFFFFF;
+    background: rgba(0,0,0,0.7);
+    color: #FFFFFF;
+    font-size: 12px; 
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 1000px){
+    /* Регистрация */
+
+    .main-container{
+    }
+
+    .header-reg{
+        width: 100%;
+        height: 150px;
+        display: flex;
+    }
+
+    .header-reg__back-to-main{
+        margin-left: 50px;
+    }
+
+    .header-reg__back-to-main p{
+        font-size: 62px;
+    }
+
+    .header-reg__welcome-reg p{
+        font-size: 62px;
+    }
+
+    .reg-container__text{
+        width: 100%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+        padding-left: 70px;
+        padding-right: 70px;
+        background: rgba(0,0,0,0.7);
+        height: 450px;
+    }
+
+    .reg-container__text__first, .reg-container__text__last {
+        background: rgba(0,0,0,0.0);
+    
+    }
+    
+    .reg-container__text__first p, .reg-container__text__last p{
+        color: #FFFFFF;
+        font-size: 62px;
+    }
+
+    .reg-container{
+        display: block;
+        height: 2000px;
+        margin-bottom: 50px;
+    }
+
+    .reg-container input{
+        width: 90%;
+        height: 125px;
+        font-size: 42px;
+    }
+
+    .reg-form{
+        margin: 0 auto;
+        background: rgba(0,0,0,1);
+        width: 100%;
+    }
+
+    .reg-form__username p{ 
+        margin: 15px 0;
+        font-size: 42px;
+    }
+
+    .reg-form__button{
+        margin-top: 25px;
+        width: 325px;
+        height: 125px;
+        background: linear-gradient(45deg, #f0f0f0,#272727);
+    }
+
+    .reg-form__button p{
+        text-align: center;
+        padding-top: 25px;
+        font-size: 52px;
+        color: #FFFFFF;
+    }
+
+    .reg-form__button:hover{
+        cursor: pointer;
+        transform: scale(1.2,1.2);
+        transition: transform .2s linear;
+    }
+
+    .output-log-window{
+        width: 100%;
+        height: 50px;
+        border-top: 2px solid #FFFFFF;
+        background: rgba(0,0,0,0.7);
+        color: #ffffff;
+        font-size: 22px;
+    }
+}
