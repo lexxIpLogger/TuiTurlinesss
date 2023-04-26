@@ -187,7 +187,7 @@ p{
     }
 
     .reg-form__button{
-        margin-top: 40px;
+        margin-top: 50px;
         width: 325px;
         height: 125px;
         background: linear-gradient(45deg, #f0f0f0,#272727);
@@ -196,7 +196,7 @@ p{
     .reg-form__button p{
         text-align: center;
         padding-top: 25px;
-        font-size: 42px;
+        font-size: 48px;
         color: #FFFFFF;
     }
 
