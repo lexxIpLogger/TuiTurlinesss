@@ -315,8 +315,8 @@ p{
 
     #exit-gallery{
         background: url('../img/controls/exit-gallery.png');
-        width: 32px;
-        height: 32px;
+        width: 64px;
+        height: 64px;
         float: left;
         margin-left: 25px;
         margin-top: 25px;
